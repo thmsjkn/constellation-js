@@ -1,0 +1,9 @@
+version: "2"
+services:
+  build:
+    image: node
+    command: npm start
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    user: ${UID}
